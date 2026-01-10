@@ -65,8 +65,8 @@ export function Header({ onSelectView }: { onSelectView?: (v: string) => void })
     try {
       const newPath = path.startsWith("/") ? path : `/${path}`;
       window.history.replaceState({}, "", newPath);
-    } catch (e) {
-      // ignore
+    } catch {
+      /* ignore */
     }
   };
 
@@ -94,28 +94,32 @@ export function Header({ onSelectView }: { onSelectView?: (v: string) => void })
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
 
-            {/* ===== LOGO ===== */}
+            {/* ===== LOGO (RESPONSIVE FIX) ===== */}
             <button
               onClick={() => {
                 onSelectView?.("home");
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity"
+              className="flex items-center gap-3 hover:opacity-80 transition-opacity"
             >
-              <Image
-                src="/branding/logo.jpg"
-                alt="StartupVision Logo"
-                width={84}
-                height={84}
-                className="rounded-lg"
-                priority
-              />
+              {/* Logo Container */}
+              <div className="relative w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12">
+                <Image
+                  src="/branding/logo.jpg"
+                  alt="StartupVision Logo"
+                  fill
+                  sizes="(max-width: 640px) 36px, (max-width: 768px) 40px, 48px"
+                  className="object-contain rounded-lg"
+                  priority
+                />
+              </div>
 
-              <div className="text-left">
-                <span className="font-bold text-xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              {/* Brand Text */}
+              <div className="leading-tight">
+                <span className="block font-bold text-base sm:text-lg md:text-xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   StartupVision
                 </span>
-                <p className="text-xs text-gray-500">
+                <p className="text-[10px] sm:text-xs text-gray-500">
                   Empowering Entrepreneurs
                 </p>
               </div>
@@ -172,14 +176,11 @@ export function Header({ onSelectView }: { onSelectView?: (v: string) => void })
             {/* ===== CALL BUTTON ===== */}
             <div className="hidden md:flex">
               <a
-                href="tel:1800000000"
+                href="tel:04045508829"
                 className="px-6 py-3 rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold flex items-center gap-3 shadow hover:shadow-lg"
               >
                 <Phone size={18} />
-                <div>
-                  <span className="text-sm"></span>
-                  <span className="text-lg font-bold">04045508829</span>
-                </div>
+                <span className="text-lg font-bold">04045508829</span>
               </a>
             </div>
 
@@ -244,7 +245,7 @@ export function Header({ onSelectView }: { onSelectView?: (v: string) => void })
               })}
 
               <a
-                href="tel:1800000000"
+                href="tel:04045508829"
                 className="flex items-center justify-center gap-3 px-4 py-4 rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold"
               >
                 <Phone size={20} />
