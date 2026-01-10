@@ -233,7 +233,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold">Phone</h4>
-                  <p className="text-neutral-600">1800-000-0000</p>
+                  <p className="text-neutral-600">04045508829</p>
                 </div>
               </div>
 
