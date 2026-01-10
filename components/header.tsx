@@ -248,7 +248,7 @@ export function Header({ onSelectView }: { onSelectView?: (v: string) => void })
                 className="flex items-center justify-center gap-3 px-4 py-4 rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold"
               >
                 <Phone size={20} />
-                <span className="font-bold">1800-000-0000</span>
+                <span className="font-bold">04045508829</span>
               </a>
             </nav>
           )}
