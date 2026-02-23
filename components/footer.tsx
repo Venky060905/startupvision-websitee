@@ -102,7 +102,7 @@ export function Footer() {
 
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/startup-vision12/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform duration-200"
