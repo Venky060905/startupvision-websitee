@@ -12,7 +12,7 @@ export function Footer() {
         {/* LOGO */}
         <div className="mb-10 flex justify-start">
           <Image
-            src="/branding/logo.jpg"
+            src="/branding/logo-grey.png"
             alt="StartupVision Logo"
             width={120}
             height={50}
@@ -54,7 +54,7 @@ export function Footer() {
 
               <li>
                 <strong>Address:</strong><br />
-                MRC Complex, 2nd Floor 202, Ayyappa Society,<br />
+                MCR Complex, 2nd Floor 202, Ayyappa Society,<br />
                 Madhapur, Hyderabad – 500081
               </li>
             </ul>
@@ -67,7 +67,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-blue-600 mt-1 shrink-0" />
                 <span>
-                  MRC Complex, 2nd Floor 202,<br />
+                  MCR Complex, 2nd Floor 202,<br />
                   Ayyappa Society, Madhapur<br />
                   Hyderabad – 500081
                 </span>
