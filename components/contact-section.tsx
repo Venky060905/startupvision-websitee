@@ -244,7 +244,7 @@ export function ContactSection() {
                 <div>
                   <h4 className="font-semibold">Address</h4>
                   <p className="text-neutral-600 leading-relaxed">
-                    MRC Complex, 2nd Floor 202,
+                    MCR Complex, 2nd Floor 202,
                     <br /> Ayyappa Society, Madhapur,
                     <br /> Hyderabad – 500082, Telangana
                   </p>
