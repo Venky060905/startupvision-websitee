@@ -226,33 +226,7 @@ export default function InformationPage() {
         </div>
       </div>
 
-      {/* =======================
-          TESTIMONIALS
-      ======================== */}
-      <div className="bg-teal-700 pb-12 sm:pb-16 md:pb-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
-            What Our Happy Customers Say
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-2xl p-4 shadow-lg">
-                <Image
-                  src={`/images/testimonial-${i}.svg`}
-                  alt={`testimonial-${i}`}
-                  width={300}
-                  height={400}
-                  className="rounded-xl"
-                />
-                <p className="text-center text-red-500 mt-3 text-sm">
-                  View more on YouTube
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      
       
 
 
@@ -265,7 +239,7 @@ export default function InformationPage() {
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-red-600 mb-3 sm:mb-4">
             </h3>
             <p className="text-sm sm:text-base text-gray-700 mb-6 sm:mb-8 leading-relaxed">
-              As a dynamic Startup Consultancy, our mission at StartupFlora is to deliver impactful services backed by driven strategies.
+              As a dynamic Startup Consultancy, our mission at StartupVision is to deliver impactful services backed by driven strategies.
             </p>
             <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
               <div className="flex items-center gap-4">
